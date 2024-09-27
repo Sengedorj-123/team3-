@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+// import { byPrefixAndName } from '@awesome.me/kit-KIT_CODE/icons'
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
