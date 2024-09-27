@@ -23,16 +23,16 @@
 import { EditIcon } from "./icons/Edit";
 import { TrashIcon } from "./icons/Trash";
 
-export const ProductCard = ({ item }) => {
+export const ProductCard = ({ item, onEdit, onDelete }) => {
   return (
     <div className="w-[300px] h-fit border flex flex-col p-4">
       <header className="w-full flex justify-between">
         <h1>baraanii ner: {item?.name}</h1>
         <div className="flex gap-5">
-          <button>
+          <button onClick={onDelete} aria-label="Delete Product">
             <TrashIcon />
           </button>
-          <button>
+          <button onClick={onEdit} aria-label="Edit Product">
             <EditIcon />
           </button>
         </div>
